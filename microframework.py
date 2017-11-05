@@ -56,9 +56,9 @@ class JSONDB:
             return True
 
     def get(self, option):
-        """Get value from loaded config"""
+        """Get value from loaded DB"""
         return self.json_array[option]
     
-    def set(self, option, new_value):
-        """Change key value. Need commit() to save to disk"""
+    def update(self, option, new_value):
+        """Change option value. Need save() to save to disk"""
         self.json_array[option] = new_value

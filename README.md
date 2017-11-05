@@ -50,7 +50,7 @@ if password == credentials.get('password'):
     print('Login success')
 
 new_password = input('Enter new password: ')
-credentals.set('password', new_password)
+credentals.update('password', new_password)
 credentials.save() # write to disk
 
 ```
